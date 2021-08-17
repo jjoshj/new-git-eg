@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+.welcomeNote{
+    font-family: 'Bangers', cursive;
+}
+.search-area{
+  text-align:center;
+  padding-bottom:20px;
+}
+.flag{
+  height:140px;
+  width:240px;
+  border: 1px solid black;
+}
+.user-list {
+	display: grid;
+	place-items: center;
+	gap: 20px;
+}
+.user-container {
+	border: 5px solid whitesmoke;
+    border-radius: 10%;
+  text-align:center;
+ padding:20px;
+  width:240px;
+}
+body{
+    height: 0%;
+    width: 0%;
+    background-color: black;
+    width: 100%;
+    color: whitesmoke;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/58a37c4dd2b857e5fe098b77/1523656227482-5RO391435M3SLAY7OUIP/900_WorldFlag.jpg?format=2500w");
+    background-repeat: no-repeat, repeat;  
+    background-position: center;
+    background-size: cover;
+}
+@media (min-width: 600px){
+  .welcomeNote{
+     font-size: 55px;
+  }
+  .user-list{
+     grid-template-columns: 1fr 1fr  ;
+  }
+   .search-tab{
+      height:20px;
+      width:500px;
+    }
+    .search-key{
+       height:30px;
+      width:140px;
+      font-weight: bolder;
+      font-size: 18px;
+    }
+ input,
+input::-webkit-input-placeholder {
+    font-size: 19px;
+    line-height: 3;
+}
+}
+@media (min-width: 1100px){
+  .user-list{
+     grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
